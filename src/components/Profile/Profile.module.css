@@ -38,7 +38,7 @@
   border-radius: 10px;
 }
 .stats li {
-  flex-basis: calc(100% / 3);
+  flex-basis: auto;
   text-align: center;
   padding: 20px;
 }

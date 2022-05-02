@@ -22,7 +22,7 @@
   border-radius: 5px;
 }
 .item {
-  flex-basis: calc(100% / 5);
+  flex-basis: auto;
   text-align: center;
   padding: 15px;
 }
