@@ -1,11 +1,11 @@
 import Profile from './Profile/Profile';
-import StatisticsList from './Statistics/Statistics';
+import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
-import user from '../datas/user.json';
-import datas from '../datas/data.json';
-import friends from '../datas/friends.json';
-import items from '../datas/transactions.json';
+import user from '../data/user.json';
+import data from '../data/data.json';
+import friends from '../data/friends.json';
+import items from '../data/transactions.json';
 
 export default function App() {
   return (
@@ -15,11 +15,9 @@ export default function App() {
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
-      />
-      <StatisticsList datas={datas} />
+        stats={user.stats}
+       />
+      <Statistics data={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={items} />
     </div>
